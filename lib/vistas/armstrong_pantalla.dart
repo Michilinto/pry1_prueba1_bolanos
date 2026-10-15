@@ -48,11 +48,6 @@ class _ArmstrongPantallaState extends State<ArmstrongPantalla> {
     });
   }
 
-  @override
-  void dispose() {
-    numeroController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +57,7 @@ class _ArmstrongPantallaState extends State<ArmstrongPantalla> {
         backgroundColor: Colors.purpleAccent,
         foregroundColor: Colors.white,
       ),
-      body: SingleChildScrollView(
+      body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

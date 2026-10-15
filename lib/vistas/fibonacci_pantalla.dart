@@ -41,12 +41,6 @@ class _FibonacciPantallaState extends State<FibonacciPantalla> {
   }
 
   @override
-  void dispose() {
-    cantidadController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -54,7 +48,7 @@ class _FibonacciPantallaState extends State<FibonacciPantalla> {
         backgroundColor: Colors.purpleAccent,
         foregroundColor: Colors.white,
       ),
-      body: SingleChildScrollView(
+      body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

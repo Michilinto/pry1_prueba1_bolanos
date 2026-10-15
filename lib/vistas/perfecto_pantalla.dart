@@ -45,12 +45,6 @@ class _PerfectoPantallaState extends State<PerfectoPantalla> {
   }
 
   @override
-  void dispose() {
-    numeroController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -58,7 +52,7 @@ class _PerfectoPantallaState extends State<PerfectoPantalla> {
         backgroundColor: Colors.purpleAccent,
         foregroundColor: Colors.white,
       ),
-      body: SingleChildScrollView(
+      body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
