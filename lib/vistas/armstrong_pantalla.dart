@@ -47,8 +47,7 @@ class _ArmstrongPantallaState extends State<ArmstrongPantalla> {
       mensaje = '';
     });
   }
-
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
